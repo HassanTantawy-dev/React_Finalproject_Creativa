@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 function SectionProp() {
+    const [currentPage, setCurrentPage] = useState(2)
     return (
         <div>
             <div className="section properties">
@@ -328,18 +329,18 @@ function SectionProp() {
                         <div className="col-lg-12">
                             <ul className="pagination">
                                 <li>
-                                    <a href="#">1</a>
+                                    <button type="button" onClick={() => setCurrentPage(1)} className={currentPage === 1 ? 'is_active' : ''}>1</button>
                                 </li>
                                 <li>
-                                    <a className="is_active" href="#">
+                                    <button type="button" onClick={() => setCurrentPage(2)} className={currentPage === 2 ? 'is_active' : ''}>
                                         2
-                                    </a>
+                                    </button>
                                 </li>
                                 <li>
-                                    <a href="#">3</a>
+                                    <button type="button" onClick={() => setCurrentPage(3)} className={currentPage === 3 ? 'is_active' : ''}>3</button>
                                 </li>
                                 <li>
-                                    <a href="#">&gt;&gt;</a>
+                                    <button type="button" onClick={() => setCurrentPage(currentPage < 3 ? currentPage + 1 : currentPage)}>&gt;&gt;</button>
                                 </li>
                             </ul>
                         </div>
