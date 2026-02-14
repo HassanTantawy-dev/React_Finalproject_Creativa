@@ -1444,7 +1444,7 @@ Properties Style
   margin: 5px 8px;
 }
 
-.properties ul.properties-filter li button{
+.properties ul.properties-filter li a {
   display: inline-block;
   text-align: center;
   font-size: 15px;
@@ -1457,17 +1457,17 @@ Properties Style
   transition: all .3s;
 }
 
-.properties ul.properties-filter li button.is_active {
+.properties ul.properties-filter li a.is_active {
   background-color: #f35525;
   color: #fff;
 }
 
-.properties ul.properties-filter li button.is_active:hover {
+.properties ul.properties-filter li a.is_active:hover {
   color: #fff;
 }
 
-.properties ul.properties-filter li button:hover {
-  background-color: #f35525;
+.properties ul.properties-filter li a:hover {
+  color: #f35525;
 }
 
 .properties ul.pagination {

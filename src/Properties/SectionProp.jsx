@@ -1,41 +1,44 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 function SectionProp() {
+    const [currentPage, setCurrentPage] = useState(2)
     return (
         <div>
             <div className="section properties">
                 <div className="container">
                     <ul className="properties-filter">
                         <li>
-                            <button className="is_active" data-filter="*" type="button">
+                            <a className="is_active" href="#!" data-filter="*">
                                 Show All
-                            </button>
+                            </a>
                         </li>
                         <li>
-                            <button data-filter=".adv" type="button">
+                            <a href="#!" data-filter=".adv">
                                 Apartment
-                            </button>
+                            </a>
                         </li>
                         <li>
-                            <button data-filter=".str" type="button">
+                            <a href="#!" data-filter=".str">
                                 Villa House
-                            </button>
+                            </a>
                         </li>
                         <li>
-                            <button data-filter=".rac" type="button">
+                            <a href="#!" data-filter=".rac">
                                 Penthouse
-                            </button>
+                            </a>
                         </li>
                     </ul>
                     <div className="row properties-box">
                         <div className="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv">
                             <div className="item">
-                                <img src="assets/images/property-01.jpg" alt="" />
+                                <a href="property-details.html">
+                                    <img src="assets/images/property-01.jpg" alt="" />
+                                </a>
                                 <span className="category">Luxury Villa</span>
                                 <h6>$2.264.000</h6>
                                 <h4>
-                                    18 Old Street Miami, OR 97219
+                                    <a href="property-details.html">18 Old Street Miami, OR 97219</a>
                                 </h4>
                                 <ul>
                                     <li>
@@ -55,17 +58,19 @@ function SectionProp() {
                                     </li>
                                 </ul>
                                 <div className="main-button">
-                                    <Link to="/details">Schedule a visit</Link>
+                                    <a href="property-details.html">Schedule a visit</a>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 str">
                             <div className="item">
-                                <img src="assets/images/property-02.jpg" alt="" />
+                                <a href="property-details.html">
+                                    <img src="assets/images/property-02.jpg" alt="" />
+                                </a>
                                 <span className="category">Luxury Villa</span>
                                 <h6>$1.180.000</h6>
                                 <h4>
-                                    54 New Street Florida, OR 27001
+                                    <a href="property-details.html">54 New Street Florida, OR 27001</a>
                                 </h4>
                                 <ul>
                                     <li>
@@ -85,17 +90,19 @@ function SectionProp() {
                                     </li>
                                 </ul>
                                 <div className="main-button">
-                                    <Link to="/details">Schedule a visit</Link>
+                                    <a href="property-details.html">Schedule a visit</a>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv rac">
                             <div className="item">
-                                <img src="assets/images/property-03.jpg" alt="" />
+                                <a href="property-details.html">
+                                    <img src="assets/images/property-03.jpg" alt="" />
+                                </a>
                                 <span className="category">Luxury Villa</span>
                                 <h6>$1.460.000</h6>
                                 <h4>
-                                    26 Mid Street Portland, OR 38540
+                                    <a href="property-details.html">26 Mid Street Portland, OR 38540</a>
                                 </h4>
                                 <ul>
                                     <li>
@@ -115,17 +122,21 @@ function SectionProp() {
                                     </li>
                                 </ul>
                                 <div className="main-button">
-                                    <Link to="/details">Schedule a visit</Link>
+                                    <a href="property-details.html">Schedule a visit</a>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 str">
                             <div className="item">
-                                <img src="assets/images/property-04.jpg" alt="" />
+                                <a href="property-details.html">
+                                    <img src="assets/images/property-04.jpg" alt="" />
+                                </a>
                                 <span className="category">Apartment</span>
                                 <h6>$584.500</h6>
                                 <h4>
-                                    12 Hope Street Portland, OR 12650
+                                    <a href="property-details.html">
+                                        12 Hope Street Portland, OR 12650
+                                    </a>
                                 </h4>
                                 <ul>
                                     <li>
@@ -145,17 +156,21 @@ function SectionProp() {
                                     </li>
                                 </ul>
                                 <div className="main-button">
-                                    <Link to="/details">Schedule a visit</Link>
+                                    <a href="property-details.html">Schedule a visit</a>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac str">
                             <div className="item">
-                                <img src="assets/images/property-05.jpg" alt="" />
+                                <a href="property-details.html">
+                                    <img src="assets/images/property-05.jpg" alt="" />
+                                </a>
                                 <span className="category">Penthouse</span>
                                 <h6>$925.600</h6>
                                 <h4>
-                                    34 Hope Street Portland, OR 42680
+                                    <a href="property-details.html">
+                                        34 Hope Street Portland, OR 42680
+                                    </a>
                                 </h4>
                                 <ul>
                                     <li>
@@ -175,17 +190,21 @@ function SectionProp() {
                                     </li>
                                 </ul>
                                 <div className="main-button">
-                                    <Link to="/details">Schedule a visit</Link>
+                                    <a href="property-details.html">Schedule a visit</a>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac adv">
                             <div className="item">
-                                <img src="assets/images/property-06.jpg" alt="" />
+                                <a href="property-details.html">
+                                    <img src="assets/images/property-06.jpg" alt="" />
+                                </a>
                                 <span className="category">Modern Condo</span>
                                 <h6>$450.000</h6>
                                 <h4>
-                                    22 Hope Street Portland, OR 16540
+                                    <a href="property-details.html">
+                                        22 Hope Street Portland, OR 16540
+                                    </a>
                                 </h4>
                                 <ul>
                                     <li>
@@ -205,17 +224,19 @@ function SectionProp() {
                                     </li>
                                 </ul>
                                 <div className="main-button">
-                                    <Link to="/details">Schedule a visit</Link>
+                                    <a href="property-details.html">Schedule a visit</a>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac str">
                             <div className="item">
-                                <img src="assets/images/property-03.jpg" alt="" />
+                                <a href="property-details.html">
+                                    <img src="assets/images/property-03.jpg" alt="" />
+                                </a>
                                 <span className="category">Luxury Villa</span>
                                 <h6>$980.000</h6>
                                 <h4>
-                                    14 Mid Street Miami, OR 36450
+                                    <a href="property-details.html">14 Mid Street Miami, OR 36450</a>
                                 </h4>
                                 <ul>
                                     <li>
@@ -235,17 +256,19 @@ function SectionProp() {
                                     </li>
                                 </ul>
                                 <div className="main-button">
-                                    <Link to="/details">Schedule a visit</Link>
+                                    <a href="property-details.html">Schedule a visit</a>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac adv">
                             <div className="item">
-                                <img src="assets/images/property-02.jpg" alt="" />
+                                <a href="property-details.html">
+                                    <img src="assets/images/property-02.jpg" alt="" />
+                                </a>
                                 <span className="category">Luxury Villa</span>
                                 <h6>$1.520.000</h6>
                                 <h4>
-                                    26 Old Street Miami, OR 12870
+                                    <a href="property-details.html">26 Old Street Miami, OR 12870</a>
                                 </h4>
                                 <ul>
                                     <li>
@@ -265,17 +288,19 @@ function SectionProp() {
                                     </li>
                                 </ul>
                                 <div className="main-button">
-                                    <Link to="/details">Schedule a visit</Link>
+                                    <a href="property-details.html">Schedule a visit</a>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac adv">
                             <div className="item">
-                                <img src="assets/images/property-01.jpg" alt="" />
+                                <a href="property-details.html">
+                                    <img src="assets/images/property-01.jpg" alt="" />
+                                </a>
                                 <span className="category">Luxury Villa</span>
                                 <h6>$3.145.000</h6>
                                 <h4>
-                                    34 New Street Miami, OR 24650
+                                    <a href="property-details.html">34 New Street Miami, OR 24650</a>
                                 </h4>
                                 <ul>
                                     <li>
@@ -295,7 +320,7 @@ function SectionProp() {
                                     </li>
                                 </ul>
                                 <div className="main-button">
-                                    <Link to="/details">Schedule a visit</Link>
+                                    <a href="property-details.html">Schedule a visit</a>
                                 </div>
                             </div>
                         </div>
@@ -322,6 +347,7 @@ function SectionProp() {
                     </div>
                 </div>
             </div>
+
 
         </div>
     )
