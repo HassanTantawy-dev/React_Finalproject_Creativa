@@ -19,22 +19,22 @@ function Subnav() {
                         <div className="col-lg-4 col-md-4">
                             <ul className="social-links">
                                 <li>
-                                    <a href="#">
+                                    <a href="https://www.facebook.com">
                                         <i className="fab fa-facebook" />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://x.com/minthu" target="_blank">
+                                    <a href="https://x.com/minthu" target="_blank" rel="noreferrer">
                                         <i className="fab fa-twitter" />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="https://www.linkedin.com">
                                         <i className="fab fa-linkedin" />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="https://www.instagram.com">
                                         <i className="fab fa-instagram" />
                                     </a>
                                 </li>

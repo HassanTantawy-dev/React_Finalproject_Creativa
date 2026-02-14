@@ -3,7 +3,7 @@ import { NavLink } from 'react-router'
 import { useCart } from 'react-use-cart'
 
 function Navbar() {
-    const {totalItems} = useCart()
+    const { totalItems } = useCart()
     return (
         <div>
             <>
@@ -39,11 +39,11 @@ function Navbar() {
                                         </li>
                                         <li>
                                             <NavLink to="/cart" className="text-light">
-                                                <i className="fa-solid fa-cart-shopping"></i> Cart<span className='badge badge-primary' style={{ padding:"5px", backgroundColor:"#f35525", marginLeft:"5px" }}>{totalItems}</span>
+                                                <i className="fa-solid fa-cart-shopping"></i> Cart<span className='badge badge-primary' style={{ padding: "5px", backgroundColor: "#f35525", marginLeft: "5px" }}>{totalItems}</span>
                                             </NavLink>
                                         </li>
                                     </ul>
-                                    <a className="menu-trigger">
+                                    <a href="#" className="menu-trigger">
                                         <span>Menu</span>
                                     </a>
                                     {/* ***** Menu End ***** */}
