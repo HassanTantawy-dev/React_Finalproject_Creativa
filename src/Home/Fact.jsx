@@ -15,7 +15,7 @@ function Fact() {
                                                 className="timer count-title count-number"
                                                 data-to={34}
                                                 data-speed={1000}
-                                            />
+                                            >34</h2>
                                             <p className="count-text ">
                                                 Buildings
                                                 <br />
@@ -29,7 +29,7 @@ function Fact() {
                                                 className="timer count-title count-number"
                                                 data-to={12}
                                                 data-speed={1000}
-                                            />
+                                            >12</h2>
                                             <p className="count-text ">
                                                 Years
                                                 <br />
@@ -43,7 +43,7 @@ function Fact() {
                                                 className="timer count-title count-number"
                                                 data-to={24}
                                                 data-speed={1000}
-                                            />
+                                            >24</h2>
                                             <p className="count-text ">
                                                 Awwards
                                                 <br />

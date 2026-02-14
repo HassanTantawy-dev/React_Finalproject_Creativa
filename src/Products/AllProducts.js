@@ -1,10 +1,10 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import Allcompo from "../components/Allcompo";
 import Footer from "../components/Footer";
 import { apiValue } from "../Data/AllData";
 import { CartProvider, useCart } from "react-use-cart";
 import { Link } from "react-router-dom";
-import Swal from 'sweetalert2'
+import Swal from "sweetalert2";
 
 function Page() {
   const { addItem } = useCart();
@@ -37,10 +37,7 @@ function Page() {
                 if (String(item.id) === search) return true;
                 if (item.title && String(item.title).toLowerCase().includes(s))
                   return true;
-                if (
-                  item.tags &&
-                  String(item.tags).toLowerCase().includes(s)
-                )
+                if (item.tags && String(item.tags).toLowerCase().includes(s))
                   return true;
                 return false;
               })
@@ -65,15 +62,19 @@ function Page() {
                     </ul>
                     <div className="main-button">
                       <Link to={`/details-product/${item.id}`}>Details</Link>
-                      <button onClick={() => {
-                        addItem(item);
-                        Swal.fire({
-                          title: "Added to Cart!",
-                          text: `${item.tags} has been added to your cart.`,
-                          icon: "success",
-                          confirmButtonColor: "#f35525",
-                        });
-                      }} >Add To Cart</button>
+                      <button
+                        onClick={() => {
+                          addItem(item);
+                          Swal.fire({
+                            title: "Added to Cart!",
+                            text: `${item.tags} has been added to your cart.`,
+                            icon: "success",
+                            confirmButtonColor: "#f35525",
+                          });
+                        }}
+                      >
+                        Add To Cart
+                      </button>
                     </div>
                   </div>
                 </div>
