@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router'
-import { useCart } from 'react-use-cart'
 
 function BestDeal() {
     return (

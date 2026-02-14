@@ -43,9 +43,9 @@ function Navbar() {
                                             </NavLink>
                                         </li>
                                     </ul>
-                                    <a href="#" className="menu-trigger">
+                                    <button type="button" className="menu-trigger">
                                         <span>Menu</span>
-                                    </a>
+                                    </button>
                                     {/* ***** Menu End ***** */}
                                 </nav>
                             </div>

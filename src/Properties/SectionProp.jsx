@@ -8,24 +8,24 @@ function SectionProp() {
                 <div className="container">
                     <ul className="properties-filter">
                         <li>
-                            <a className="is_active" href="#!" data-filter="*">
+                            <button className="is_active" data-filter="*" type="button">
                                 Show All
-                            </a>
+                            </button>
                         </li>
                         <li>
-                            <a href="#!" data-filter=".adv">
+                            <button data-filter=".adv" type="button">
                                 Apartment
-                            </a>
+                            </button>
                         </li>
                         <li>
-                            <a href="#!" data-filter=".str">
+                            <button data-filter=".str" type="button">
                                 Villa House
-                            </a>
+                            </button>
                         </li>
                         <li>
-                            <a href="#!" data-filter=".rac">
+                            <button data-filter=".rac" type="button">
                                 Penthouse
-                            </a>
+                            </button>
                         </li>
                     </ul>
                     <div className="row properties-box">
