@@ -15,8 +15,11 @@ function AllDetailsProduct() {
       <div className="container">
         {data &&
           data.map((item) => {
-            return item.id === id ? (
-              <div className="card product-card mx-auto">
+            // تأكيد أن المقارنة تتم كسلاسل نصية لتفادي اختلاف النوع (number vs string)
+            if (String(item.id) !== String(id)) return null;
+
+            return (
+              <div className="card product-card mx-auto" key={item.id}>
                 <div className="row g-0 0">
                   <div className="col-md-6 d-flex align-items-center justify-content-center">
                     <img
@@ -49,7 +52,7 @@ function AllDetailsProduct() {
                   </div>
                 </div>
               </div>
-            ) : null;
+            );
           })}
       </div>
 
